@@ -73,7 +73,7 @@ function loadMessages(){
     });
 }
 function loadHome(){
-    window.location.href = '../Home/index.html';
+    window.location.href = 'index.html';
 }
 loadMessages();
 adminName.innerHTML = admin.name;

@@ -10,7 +10,7 @@ const experience2 = document.getElementById('experience2');
 const experience3 = document.getElementById('experience3');
 
 function loadAdminPage(){
-    window.location.href = '../Admin/index.html';
+    window.location.href = 'adminIndex.html';
 }
 if (!localStorage.getItem('userMessages')) {
     localStorage.setItem('userMessages', JSON.stringify([]));
@@ -22,11 +22,11 @@ document.getElementById('logged-user1').innerHTML = activeUser['name'];
 contactForm = document.getElementById('contact-form');
 function logout(){
     localStorage.removeItem('loggedInUser');
-    window.location.href = '../Authentification/index.html';
+    window.location.href = 'authIndex.html';
 }
 
 if (!activeUser){
-    window.location.href = '../Authentification/index.html';
+    window.location.href = 'authIndex.html';
 }else{
     console.log(activeUser);
     let adminPrivilege = activeUser['admin'];

@@ -64,7 +64,7 @@ loginForm.addEventListener('submit', function(e){
     let emailFound = false;
     let passwordFound = false;
 
-    fetch('../data/data.json')
+    fetch('./data/data.json')
     .then(
         response => {
             if(response.ok){
@@ -88,7 +88,7 @@ loginForm.addEventListener('submit', function(e){
                 if (user.email == email && user.password == password){
                     localStorage.setItem('loggedInUser', JSON.stringify(user));
                     loggedInUser = JSON.stringify(user);
-                    window.location.href = '../Home/index.html';
+                    window.location.href = 'index.html';
                 
                 }
             });
@@ -139,7 +139,7 @@ loginForm.addEventListener('submit', function(e){
                     data.users.push(newUser);
                     localStorage.setItem('loggedInUser', JSON.stringify(newUser));
                     loggedInUser = JSON.stringify(newUser);
-                    window.location.href = '../Home/index.html';
+                    window.location.href = 'index.html';
                 }
             }
         )
