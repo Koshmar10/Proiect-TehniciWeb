@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Admin page</h1>
+        <a onclick="loadHome()" id="admin-name"></a>
+    </header>
+    <main>
+        <div class="admin-panel">
+            <div class="message-container">
+                <h2>Messages</h2>
+                <div class="" id="message-container">
+                    
+                </div>
+            </div>
+            <div class="statistics-container">
+                <h2>Blog Stats</h2>
+                <div class="statistic">
+                    <h3 >Active Uesers</h3>
+                    <p id="active-users">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                </div>
+                <div class="statistic">
+                    <h3>Monthly Visits</h3>
+                    <canvas id="chart"></canvas>
+                </div>
+                <div class="statistic">
+                    <h3>Averege Retention</h3>
+                    <p>00:00:32</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

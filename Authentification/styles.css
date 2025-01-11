@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light:#EDF1F5;
+    --light-accent:#87A4C5;
+    --main: #656C7E;
+    --dark-accent: #5481BF;
+    --dark:#161924;
+    --error-bg: #F5C6CB;
+    --error-text: #721C24;
+    --error-link: #A94442;
+    --error-link-hover: #721C24;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-color: var(--light);
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.form-container {
+    height: 80vh;
+    width: 30rem;
+    background-color: var(--main);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: 1.6rem 0rem;
+}
+
+.form-container h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.form-container a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--light);
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.input-container label{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.input-container input{
+    all: unset;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    background-color: var(--light);
+    color : var(--dark);
+    transition: transform 0.3s ease;
+}
+
+.input-container input:focus{
+    transform: scale(1.03) translateY(0.2rem); 
+}
+
+.end-form-group{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.end-form-group button{
+    width: 40%;
+    height: 2.4rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    background-color: var(--light);
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.end-form-group button:hover{
+    background-color: var(--light-accent);
+}
+
+.email-error, .password-error{
+    border-radius: 5px;
+    background-color: var(--error-bg);
+    color: var(--error-text);
+    margin: 0.8rem 0;
+    padding: 0.4rem 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.email-error a, .password-error a{
+    cursor: pointer;
+    color: var(--error-link);
+    
+    text-decoration: none;
+    margin: 0;
+    font-weight: 400;
+    
+}
+
+.email-error a:hover, .password-error a:hover{
+    color: var(--error-link-hover);
+}
+
+.email-error p, .password-error p{
+    width: 80%;
+    margin: 0;
+  
+}
+
+.register-form > .register-form-header{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+.register-form-header > h1{
+    margin: 0;
+}
+.login-return{
+ font-weight: 400;
+    color: var(--light);
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+.login-return:hover{
+    color: var(--light-accent);
+    transform: scale(1.2);
+}

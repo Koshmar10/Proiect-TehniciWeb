@@ -1,0 +1,25 @@
+{
+    "users": 
+        [
+            {   
+                "name": "Petru",
+                "password": "petruboss2005",
+                "email": "petru.draghiceanu@gmail.com",
+                "admin": true
+            },
+
+            {
+                "name": "Alice",
+                "password": "1234",
+                "email": "alice@gmail.com",
+                "admin": false
+            },
+            {
+                "name": "Raul",
+                "password": "12345678s",
+                "email": "raul@gmail.com",
+                "admin": false
+            }
+        ]
+    
+}

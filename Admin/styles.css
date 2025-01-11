@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --light:#EDF1F5;
+    --light-accent:#87A4C5;
+    --main: #656C7E;
+    --dark-accent: #5481BF;
+    --dark:#161924;
+    --error-bg: #F5C6CB;
+    --error-text: #721C24;
+    --error-link: #A94442;
+    --error-link-hover: #721C24;
+}
+
+body {
+    width: 100%;
+}
+#admin-name{
+    align-self: center;
+}
+header{
+    background-color:  var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 10vh;
+    width: 100%;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 90vh;
+}
+.admin-panel{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap : 1rem;
+}
+.message-container{
+
+    color: var(--light);
+    background-color: var(--dark);
+    height: 100%;
+    width: 60%;
+    padding: 0.8rem 1.2rem;
+    
+
+}
+.statistics-container{
+    color: var(--dark);
+    background-color: var(--light);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    height: 100%;
+    width: 60%;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+#message-container{
+    padding: 1.2rem 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    
+}
+
+#message-container > * {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 600px) {
+    #message-container {
+        flex-direction: row;
+    }
+
+    #message-container > * {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+.message{
+    border-radius: 10px;
+    background-color: var(--main);
+    padding: 0.8rem 0.4rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.delete-button{
+    background-color: var(--error-text);
+    color: var(--error-bg);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 0.3em 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 0.5rem;
+   
+}
+.message-identification{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    color: #bdbdbd; 
+ 
+}
+.name-container{
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+.message-text{
+    font-size: 0.9rem;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+#chart{
+    width: 80%;
+    max-width: 40rem;
+    max-height: 40rem;
+}
+#admin-name{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+@media (min-width: 1201px) {
+    .statistics-container {
+        width: 45%;
+        overflow-y: scroll;
+    }
+    .message-container {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .statistics-container {
+        width: 45%;
+        overflow-y: scroll;
+    }
+    .message-container {
+        width: 55%;
+    }
+}
+
+@media (max-width: 992px) {
+    .message {
+        max-width: 100%;
+    }
+    .message-container {
+        width: 50%;
+    }
+    .statistics-container {
+        width: 50%;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 993px) {
+    #message-container > * {
+        flex: 1 1 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .admin-panel{
+        flex-direction: column; 
+        padding: 3rem 0;
+    }
+    .message-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .statistics-container{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: auto1;
+    }
+    .message-container,
+    .statistics-container {
+        padding: 0.5rem;
+    }
+
+    .message {
+        padding: 0.5rem 0.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        padding: 0.5rem 1rem;
+    }
+
+    .message-container,
+    .statistics-container {
+        padding: 0.3rem;
+    }
+
+    .message {
+        padding: 0.3rem 0.1rem;
+    }
+    .admin-panel{
+        flex-direction: column; 
+        padding: 3rem 0;
+    }
+    .message-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .statistics-container{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: auto1;
+    }
+   
+}
