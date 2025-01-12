@@ -772,7 +772,7 @@ textarea::placeholder{
         opacity: 1;
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.05);
         opacity: 0.7;
     }
     100% {
@@ -782,11 +782,11 @@ textarea::placeholder{
 }
 
 .pulse-animation {
-    animation: pulse 4s infinite;
+    animation: pulse 3s infinite;
 }
 
 #title {
-    animation: pulse 4s infinite;
+    animation: pulse 3s infinite;
 }
 
 
@@ -940,18 +940,18 @@ textarea::placeholder{
         margin: 0 1rem 0 1rem; 
     }
     .experience{
-        width: 16rem;
-        max-width: 16rem;
+        width: 20rem;
+        
 
     }
     .experience > .experience-title{
         font-size: 1rem;
     }
     #experience1{
-        margin-right: -7rem;
+        margin-right: calc((89vw - 53rem)*0.9);
     }
     #experience3{
-        margin-left: -7rem;
+        margin-left: calc((89vw - 53rem)*0.9);
     }
         
     
@@ -1064,10 +1064,10 @@ textarea::placeholder{
         font-size: 1.2rem;
     }
     #experience1{
-        margin-right: -9.5rem;
+        margin-right: -10.5rem;
     }
     #experience3{
-        margin-left: -9.5rem;
+        margin-left: -10.5rem;
     }
         
     
