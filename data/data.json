@@ -19,7 +19,22 @@
                 "password": "12345678s",
                 "email": "raul@gmail.com",
                 "admin": false
+            },
+            {
+                "name": "GamerGod",
+                "password": "zeupemid",
+                "email": "kakashi@gmail.com",
+                "admin": false
+            },
+            {
+                
+                "name": "Boss",
+                "password": "BossPass123",
+                "email": "randomuser@example.com",
+                "admin": false
+                
             }
+
         ]
     
 }
