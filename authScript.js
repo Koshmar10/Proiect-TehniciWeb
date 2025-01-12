@@ -26,15 +26,10 @@ function showUser(){
    document.getElementsByClassName('logged-user')[0].innerHTML = loggedInUser;
 }
 
+showLogin();
+passwordError.style.display = 'none';
+emailError.style.display = 'none';
 
-if(loggedInUser){
-    showUser();
-}
-else{
-    showLogin();
-    passwordError.style.display = 'none';
-    emailError.style.display = 'none';
-}
 
 
 dissmissEmailError.onclick = function(e){

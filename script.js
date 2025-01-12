@@ -1,5 +1,7 @@
 let activeUser = JSON.parse(localStorage.getItem('loggedInUser'));
-
+if (!activeUser) {
+    activeUser = null;
+}
 
 const adminButton = document.getElementById('admin-button');
 const adminButton1 = document.getElementById('admin-button1');
@@ -9,7 +11,7 @@ const experience1 = document.getElementById('experience1');
 const experience2 = document.getElementById('experience2');
 const experience3 = document.getElementById('experience3');
 
-if (Object.keys(activeUser).length === 0) {
+if (!activeUser) {
     window.location.href = 'authIndex.html';
 }else{
     console.log(activeUser);
