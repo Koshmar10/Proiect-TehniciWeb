@@ -1,1 +1,2 @@
-https://koshmar10.github.io/Proiect-TehniciWeb/adminIndex.html
+#Proiect TehniciWeb
+https://koshmar10.github.io/Proiect-TehniciWeb/
