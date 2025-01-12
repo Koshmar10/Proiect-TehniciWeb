@@ -9,6 +9,20 @@ const experience1 = document.getElementById('experience1');
 const experience2 = document.getElementById('experience2');
 const experience3 = document.getElementById('experience3');
 
+if (Object.keys(activeUser).length === 0) {
+    window.location.href = 'authIndex.html';
+}else{
+    console.log(activeUser);
+    let adminPrivilege = activeUser['admin'];
+    console.log(adminPrivilege);
+    if (adminPrivilege){
+        adminButton.style.display = 'flex';
+        adminButton1.style.display = 'flex';
+    }else{
+        adminButton.style.display = 'none';
+        adminButton1.style.display = 'none';
+    }
+}
 function loadAdminPage(){
     window.location.href = 'adminIndex.html';
 }
@@ -25,20 +39,6 @@ function logout(){
     window.location.href = 'authIndex.html';
 }
 
-if (!activeUser){
-    window.location.href = 'authIndex.html';
-}else{
-    console.log(activeUser);
-    let adminPrivilege = activeUser['admin'];
-    console.log(adminPrivilege);
-    if (adminPrivilege){
-        adminButton.style.display = 'flex';
-        adminButton1.style.display = 'flex';
-    }else{
-        adminButton.style.display = 'none';
-        adminButton1.style.display = 'none';
-    }
-}
 contactForm.addEventListener('submit', function(e){
     e.preventDefault();
     let firstName = document.getElementById('firstname').value;
